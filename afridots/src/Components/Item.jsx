@@ -1,7 +1,5 @@
-
-import React from 'react'
 import BookItem from './Grid/BookItem'
-import BookImg from "/assets/books/carSpotter.png'
+import BookImg from "/assets/books/carSpotter.png"
 
 const Item = () => {
   return (

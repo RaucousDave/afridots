@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-const ItemFilterComp = ({ data, menu, RenderComponent }) => {
+const ItemFilterComp = ({ data, menu, RenderComponent: Render }) => {
   const [selectedCategory, setSelectedCategory] = useState(null);
   const [filteredData, setFilteredData] = useState(data);
   const [sortedData, setSortedData] = useState(data);
@@ -120,7 +120,7 @@ const ItemFilterComp = ({ data, menu, RenderComponent }) => {
       </div>
 
       {/* ===== DYNAMIC RENDER COMPONENT ===== */}
-      <RenderComponent items={currentItems} />
+      {React.createElement(Render, { items: currentItems })}
 
       {/* ===== PAGINATION ===== */}
       <div className="flex gap-3 mt-8">

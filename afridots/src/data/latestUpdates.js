@@ -1,4 +1,4 @@
-import 
+const Update1 = "/assets/update1.png";
 
 export const updates = [
     {

@@ -1,6 +1,7 @@
 import React from 'react'
 import HeroComp from '../Components/HeroComp'
 import Explore from '../Components/Explore'
+const BookHeroBg = "/assets/bookHeroBg.png";
 
 const Listen = () => {
   return (
