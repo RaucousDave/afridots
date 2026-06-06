@@ -9,9 +9,12 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   const footerLinks = [
     { name: "Home", target: "/" },
-    { name: "About Us", target: "/about" },
+    { name: "About", target: "/about" },
     { name: "Shop", target: "/shop" },
-    { name: "Events", target: "/" },
+    { name: "Products", target: "/products" },
+    { name: "Contact Us", target: "/contact" },
+    { name: "News", target: "/news" },
+    {name: "Audio", target: "/audio"}
   ];
 
   const socialIcons = [
@@ -29,7 +32,10 @@ const Footer = () => {
           const SocialIcon = social.icon;
 
           return (
-            <div key={social.icon.displayName ?? social.icon.name} className="hover:bg-white p-1 border border-transparent transition-all hover:border-yellow-500 rounded-full">
+            <div
+              key={social.icon.displayName ?? social.icon.name}
+              className="hover:bg-white p-1 border border-transparent transition-all hover:border-yellow-500 rounded-full"
+            >
               <SocialIcon className="text-yellow-500 fill-yellow-500 w-7 h-7 transition-colors hover:text-blue" />
             </div>
           );

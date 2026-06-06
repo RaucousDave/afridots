@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Update from "../Update";
 const Star = "/assets/Star.png";
 const Update1 = "/assets/update1.png";
@@ -40,9 +41,9 @@ const LatestUpdate = () => {
             similique id. Autem?
           </p>
         </div>
-        <div className="flex md:flex-row flex-col gap-4 lg:overflow-x-scroll mt-6">
+        <div className="flex md:flex-row flex-col justify-between gap-4  mt-6">
           {updates.map((item, index) => (
-            <div key={index} className="md:flex-shrink-0">
+            <div key={index}>
               <Update
                 image={item.image}
                 category={item.category}
@@ -51,6 +52,11 @@ const LatestUpdate = () => {
               />
             </div>
           ))}
+        </div>
+        <div className="w-full mt-12">
+          <Link to="/news" className="bg-[#56913D] font-body text-center flex justify-center items-center w-[166px] h-[56px] rounded-4xl mx-auto text-white font-bold ">
+            More Updates
+          </Link>
         </div>
       </section>
     </div>

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 const Kellog = "/assets/Vector.png";
 const Gplus = "/assets/Vector(1).png";
 
@@ -14,9 +15,12 @@ export default function AudioGrid() {
           <SoundComp />
         </div>
         <div className="mt-5 flex justify-end">
-          <button className="bg-[#56913D] w-[166px] h-[56px] rounded-4xl text-white font-bold ">
+          <Link
+            to="/books"
+            className="bg-[#56913D] text-center flex justify-center items-center w-[166px] h-[56px] rounded-4xl text-white font-bold "
+          >
             More stories
-          </button>
+          </Link>
         </div>
       </div>
       <div className="border-[20px] flex-2 [border-image:url('/assets/Frame311.png')_30] py-16  px-4 sm:px-20 md:flex md:flex-col md:justify-between">

@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const AmazingAfrica = "/assets/books/Amazing-Africa.png";
 const AnnaHibiscus = "/assets/books/Anna-Hibiscus.png";
 const CarSpotter = "/assets/books/carSpotter.png";
@@ -26,9 +28,14 @@ export default function BooksGrid() {
         ))}
       </ul>
       <div className="flex justify-end font-body pt-10 w-full md:px-34">
-        <button className="font-body bg-orange-400/80 cursor-pointer font-semibold md:text-lg px-8 py-3 rounded-full text-white">
+        <Link
+          to="/books"
+          className="font-body bg-orange-400/80 cursor-pointer font-semibold md:text-lg px-8 py-3 rounded-full text-white"
+        >
+          {/* <button > */}
           Buy a Book
-        </button>
+          {/* </button> */}
+        </Link>
       </div>
     </>
   );

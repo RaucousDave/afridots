@@ -10,7 +10,7 @@ const Update = ({ image, category, title, description }) => {
 
   return (
     <>
-      <div className="md:w-screen font-body sm:w-[456px]">
+      <div className="font-body sm:w-[456px]">
         {/* Image container with styled border */}
         <div className="w-fit h-fit border-[0px] [box-shadow:inset_0_0_0_20px_url('/assets/Books.png')]">
           <img className="h-inherit" src={image} alt={title} />
