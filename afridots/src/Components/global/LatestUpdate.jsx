@@ -41,7 +41,7 @@ const LatestUpdate = () => {
             similique id. Autem?
           </p>
         </div>
-        <div className="flex md:flex-row flex-col justify-between gap-4  mt-6">
+        <div className="flex lg:flex-row flex-col gap-5  justify-center items-center lg:justify-between mt-6">
           {updates.map((item, index) => (
             <div key={index}>
               <Update
@@ -54,7 +54,10 @@ const LatestUpdate = () => {
           ))}
         </div>
         <div className="w-full mt-12">
-          <Link to="/news" className="bg-[#56913D] font-body text-center flex justify-center items-center w-[166px] h-[56px] rounded-4xl mx-auto text-white font-bold ">
+          <Link
+            to="/news"
+            className="bg-[#56913D] font-body text-center flex justify-center items-center w-[166px] h-[56px] rounded-4xl mx-auto text-white font-bold "
+          >
             More Updates
           </Link>
         </div>

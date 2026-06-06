@@ -6,7 +6,7 @@ import SoundComp from "../../Components/SoundComp";
 
 export default function AudioGrid() {
   return (
-    <section className="flex gap-20 font-body md:gap-4 sm:px-10 md:px-20 pt-16 md:flex-row flex-col  ">
+    <section className="flex gap-20 font-body md:gap-4 sm:px-10 md:px-20 pt-16 lg:flex-row flex-col  ">
       <div className="flex-5 h-fit py-16 px-2 border-[20px] [border-image:url('/assets/Audio.png')_30]">
         <div className="border border-[#b3bbb5] p-7 rounded-2xl">
           <SoundComp />

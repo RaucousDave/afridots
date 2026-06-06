@@ -11,7 +11,7 @@ const Home = () => {
     <>
       <>
         <main className="mb-20 relative">
-          <section className="flex justify-center z-100 flex-col-reverse sm:flex-row sm:px-10 md:px-20 gap-10 ">
+          <section className="flex mt-20 justify-center items-center z-100 flex-col-reverse sm:flex-row sm:px-10 pb-20 md:px-20 gap-10 ">
             <div>
               <img src={HeroImg1} alt="" />
             </div>
